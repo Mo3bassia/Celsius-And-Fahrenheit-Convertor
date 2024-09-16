@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Black.ttf");
+  src: url("fonts/Poppins-BlackItalic.ttf");
+  src: url("fonts/Poppins-Bold.ttf");
+  src: url("fonts/Poppins-BoldItalic.ttf");
+  src: url("fonts/Poppins-ExtraBold.ttf");
+  src: url("fonts/Poppins-ExtraBoldItalic.ttf");
+  src: url("fonts/Poppins-ExtraLight.ttf");
+  src: url("fonts/Poppins-ExtraLightItalic.ttf");
+  src: url("fonts/Poppins-Italic.ttf");
+  src: url("fonts/Poppins-Light.ttf");
+  src: url("fonts/Poppins-LightItalic.ttf");
+  src: url("fonts/Poppins-Medium.ttf");
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.box {
+  padding: 30px;
+  background-color: #4a98f7;
+  border-radius: 10px;
+  color: #fff;
+  max-width: 400px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  background-color: #f0f0f0;
+  box-shadow: -2px 1px 6px #000;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.box .swap {
+  font-size: 40px;
+  user-select: none;
+  margin-top: 30px;
+}
+
+.box .celsius input,
+.box .fahrenheit input {
+  max-width: 100px;
+  height: 50px;
+  color: #4a98f7;
+  background-color: #fff;
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 30px;
+  display: block;
+  width: 100%;
+}
+
+.box input::-webkit-inner-spin-button,
+.box input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.box label {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  display: block;
+}
+
+footer a {
+  text-decoration: none;
+  color: #385898;
+}
+footer a:hover {
+  color: #ff0000; /* تغيير لون الروابط عند تحويم الماوس */
+}
